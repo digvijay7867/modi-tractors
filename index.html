@@ -6,33 +6,38 @@
     <title>Modi Tractors</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f0f8ff;
+            color: #333;
         }
         header {
-            background-color: #003366;
+            background-color: #002855;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
         .hero {
             background: url('tiger-di-50-4wd-crds-min-1709706397.jpg') center/cover no-repeat;
-            height: 400px;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 36px;
+            font-size: 40px;
             font-weight: bold;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 1.5s ease-in-out;
         }
         .container {
-            width: 90%;
+            width: 80%;
             margin: auto;
-            padding: 20px;
+            padding: 40px 0;
+            text-align: center;
         }
         .catalog {
             display: flex;
@@ -42,15 +47,15 @@
         }
         .tractor {
             background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
             text-align: center;
             width: 320px;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
         .tractor:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
         }
         .tractor img {
             width: 100%;
@@ -58,37 +63,44 @@
         }
         .testimonials {
             background-color: #ffffff;
-            padding: 40px;
+            padding: 50px;
             text-align: center;
             font-style: italic;
+            font-size: 18px;
+            color: #555;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         .contact-form {
-            background-color: #003366;
+            background-color: #002855;
             color: white;
-            padding: 30px;
+            padding: 50px;
             text-align: center;
         }
         .contact-form input, .contact-form textarea {
             width: 80%;
-            padding: 12px;
-            margin: 10px 0;
+            padding: 14px;
+            margin: 15px 0;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 16px;
         }
         .contact-form button {
-            background-color: white;
-            color: #003366;
-            padding: 12px 25px;
+            background-color: #ffcc00;
+            color: #002855;
+            padding: 14px 30px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 18px;
             font-weight: bold;
             transition: background 0.3s;
         }
         .contact-form button:hover {
-            background-color: #ffcc00;
+            background-color: #ff9900;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -107,7 +119,7 @@
             <div class="tractor">
                 <img src="tiger-di-50-4wd-crds-min-1709706397.jpg" alt="Sonalika Tractor">
                 <h3>Sonalika Tiger DI 50 4WD</h3>
-                <p>Powerful and efficient tractor for farming.</p>
+                <p>Powerful and efficient tractor for modern farming.</p>
             </div>
         </div>
     </div>
